@@ -1,5 +1,4 @@
 from distutils.core import setup, Extension
-from git import Repo
 
 module1 = Extension('demo',
                     sources = ['test.cpp'])
@@ -10,6 +9,6 @@ setup (name = 'PackageName',
        ext_modules = [module1])
 
 
-Repo.clone_from(https://github.com/xeeshanhaider05/crytek.git, /home/home/Work)
+
 
 

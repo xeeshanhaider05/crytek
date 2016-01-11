@@ -1,26 +1,29 @@
 #!/usr/bin/python
-import calendar
+
 import os
+import git
 
-print ("Hello World")
-inp = raw_input("Press enter to exit")
-var = 100
+#pass your repository for VCS
+repo = git.Repo( '/home/home/Work' )
+print repo.git.status()
 
-if(var == 100):
-   print "Cool", inp
+# checkout and track your remote branch
+print repo.git.checkout( )
 
-calen = calendar.month(2015,12)
-print "The month"
-print calen
+#add all the changes back to branch
 
-Money = 2000
-def AddMoney():
-   # Uncomment the following line to fix the code:
-   global Money
-   Money = Money + 1
+print repo.git.add( A )
 
-print Money
-AddMoney()
-print Money
+# commit
+print repo.git.commit( m='my commit from python' )
 
-print os.getcwd()
+# now we are one commit ahead
+print repo.git.status()
+
+
+
+
+
+
+
+

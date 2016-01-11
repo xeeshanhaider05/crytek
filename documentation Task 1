@@ -1,0 +1,6 @@
+Dependecies to run the script (Open source)
+
+Python 2.7 on ubuntu 14.xx LTS
+
+pip: sudp apt-get install python-pip
+GitPython: sudo pip install GitPython
