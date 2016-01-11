@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import calendar
 import os
+from git import Repo
+
 
 print ("Hello World")
 inp = raw_input("Press enter to exit")
@@ -24,3 +26,5 @@ AddMoney()
 print Money
 
 print os.getcwd()
+
+Repo.clone_from(https://github.com/xeeshanhaider05/crytek.git, /home/home/Work)
