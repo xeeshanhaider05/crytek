@@ -24,7 +24,7 @@ print repo.git.commit( m='my commit from python' )
 # now we are one commit ahead
 print repo.git.status()
 
-#print repo.git.push('origin master')
+print repo.git.push()
 
 #print os.path.join
 
