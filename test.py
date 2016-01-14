@@ -2,9 +2,13 @@
 
 import os
 import git
+import subprocess
+
+filePath = os.path.dirname(os.path.realpath(__file__))
+os.chdir(filePath) #Calling directory of script might be diff
 
 #pass your repository for VCS
-repo = git.Repo( '/home/home/Work' )
+repo = git.Repo( filePath )
 print repo.git.status()
 
 # checkout and track your remote branch
@@ -22,9 +26,7 @@ print repo.git.status()
 
 print repo.git.push('origin master')
 
-
-
-
+#print os.path.join
 
 
 

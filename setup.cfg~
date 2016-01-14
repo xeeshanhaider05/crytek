@@ -1,0 +1,6 @@
+[build]
+build-base=bin
+force=1
+
+[install]
+
