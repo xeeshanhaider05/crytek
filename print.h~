@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+class printThings
+{
+public:
+    void printAll();
+};

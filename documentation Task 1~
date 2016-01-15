@@ -1,0 +1,5 @@
+Dependecies to run the script (Open source)
+
+Python 2.7 +
+pip: sudp apt-get install pip
+GitPython: sudo pip install GitPython

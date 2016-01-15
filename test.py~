@@ -1,26 +1,33 @@
 #!/usr/bin/python
-import calendar
+
 import os
+import git
+import subprocess
 
-print ("Hello World")
-inp = raw_input("Press enter to exit")
-var = 100
+filePath = os.path.dirname(os.path.realpath(__file__))
+os.chdir(filePath) #Calling directory of script might be diff
 
-if(var == 100):
-   print "Cool", inp
+#pass your repository for VCS
+repo = git.Repo( filePath )
+print repo.git.status()
 
-calen = calendar.month(2015,12)
-print "The month"
-print calen
+# checkout and track your remote branch
+print repo.git.checkout( )
 
-Money = 2000
-def AddMoney():
-   # Uncomment the following line to fix the code:
-   global Money
-   Money = Money + 1
+#add all the changes back to branch
 
-print Money
-AddMoney()
-print Money
+print repo.git.add( '-A' )
 
-print os.getcwd()
+# commit
+print repo.git.commit( m='my commit from python' )
+
+# now we are one commit ahead
+print repo.git.status()
+
+print repo.git.push(master)
+
+#print os.path.join
+
+
+
+
