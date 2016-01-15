@@ -5,5 +5,5 @@ using namespace std;
 
  void PrintThings::printAll()
    {
-	std::cout<<"I am print all and I am Cooooooooooooooooool\n";	
+	std::cout<<"I am print all and I am cool\n";	
    }
